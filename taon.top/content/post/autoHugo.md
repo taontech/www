@@ -15,3 +15,15 @@ date: 2022-03-20T12:05:37+08:00
 [菜鸟教程](https://www.runoob.com)
 <font color=red>这个有点意思</font>
 </td></tr></table>
+
+```mermaid
+sequenceDiagram
+Alice->>John: Hello John, how are you?
+loop Healthcheck
+    John->>John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John-->>Alice: Great!
+John->>Bob: How about you?
+Bob-->>John: Jolly good!
+```
