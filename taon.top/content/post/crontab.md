@@ -31,7 +31,18 @@ cd $PATH
 您在 /var/spool/mail/root 中有新邮件
 然后你就可以看到你的脚本有没有执行成功了
 
+<font color = red>
+crontab 没有可以执行的文件，是通过命令来添加和删除的
+
+```
+usage: crontab [-u user] file
+       crontab [-u user] { -e | -l | -r }
+```
+
+</font>
+
+
 
 ### 注意
 
-** sh 文件要执行需要 +x 权限。**
+**sh 文件要执行需要 +x 权限**
