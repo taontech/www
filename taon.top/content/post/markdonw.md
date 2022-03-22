@@ -85,3 +85,7 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
 You found me!
 {{< /spoiler >}}
 
+{{< icon name="terminal" pack="fas" >}} Terminal  
+{{< icon name="python" pack="fab" >}} Python  
+{{< icon name="r-project" pack="fab" >}} R
+
