@@ -14,7 +14,7 @@ end
 Note right of John: Rational thoughts!
 John-->>Alice: Great!
 John->>Bob: How about you?
-Bob-->>John: Jolly good!
+Bob->>Alice: Jolly good!
 ```
 ### gantt 甘特图
 ```mermaid
@@ -27,10 +27,10 @@ Parallel 2   :         des4, after des1, 1d
 Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 section 22
-Completed :         done,    des1, 2014-01-06,2014-01-08
-Active        :     done,  des2, 2014-01-07, 3d
-Parallel 2   :         des, after Completed, 1d
-Parallel 4   :         ssss, after des4, 1d
+Completed :         done,    d1, 2014-01-06,2014-01-09
+Active        :     done,  d2, 2014-01-07, 3d
+Parallel 2   :         d3, after d2, 1d
+Parallel 4   :         d4, after d3, 1d
 ```
 ### classDiagram 类图
 ```mermaid
