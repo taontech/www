@@ -75,7 +75,6 @@ Crash --> [*]
   - [x] Write diagram example
 - [ ] Do something else
 
-{{< table path="results.csv" header="true" caption="Table 1: My results" >}}
 
 {{% callout note %}}
 A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
