@@ -26,6 +26,11 @@ Parallel 1   :         des3, after des1, 1d
 Parallel 2   :         des4, after des1, 1d
 Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
+section 22
+Completed :         done,    des1, 2014-01-06,2014-01-08
+Active        :     done,  des2, 2014-01-07, 3d
+Parallel 2   :         des, after Completed, 1d
+Parallel 4   :         ssss, after des4, 1d
 ```
 ### classDiagram 类图
 ```mermaid
@@ -74,3 +79,4 @@ Crash --> [*]
 - [x] Write math example
   - [x] Write diagram example
 - [ ] Do something else
+
