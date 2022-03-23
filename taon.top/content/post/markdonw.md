@@ -7,10 +7,34 @@ date: 2022-03-22T12:27:53+08:00
 > **⚠ WARNING: Aliens are coming.**  
 > A description of the colour, smell and dangerous behaviour of the aliens.
 
+## 可以成功的
+
+```flowchart
+st=>start: Start|past:>http://www.google.com[blank]
+e=>end: End:>http://www.google.com
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>http://www.google.com
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+```
+
+```sequence
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
+```
 
 ### sequenceDiagram
 ```sequence
-sequenceDiagram
 Alice->>John: Hello John, how are you?
 loop Healthcheck
     John->>John: Fight against hypochondria
@@ -57,17 +81,6 @@ class Class10 {
 ```
 
 ### stateDiagram 状态图
-
-code：
-```mermaid
-stateDiagram
-[\*] --> Still
-Still --> [\*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [\*]
-```
 
 render：
 ```mermaid
