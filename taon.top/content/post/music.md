@@ -5,14 +5,6 @@ date: 2022-03-22T22:08:21+08:00
 
 # 测试播放音乐的功能
 
-{{% music "28196554" %}}
-
-{{% music id="28196554" %}}
-{{% music id="28196554" auto="1" %}}
-
-{{% music "28196554" %}}
-{{% music "28196554" "1" %}}
-
 ```flowchart
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
