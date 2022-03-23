@@ -4,9 +4,9 @@ date: 2022-03-22T12:27:53+08:00
 ---
 # Markdown 高级用法
 
-{{% note %}}
+<!-- {{% note %}}
 Here is a piece of information I would like to draw your **attention** to.
-{{% /note %}}
+{{% /note %}} -->
 
 > **⚠ WARNING: Aliens are coming.**  
 > A description of the colour, smell and dangerous behaviour of the aliens.
