@@ -39,13 +39,43 @@ cond(no)->sub1(left)->op1
 c2(yes)->io->e
 c2(no)->op2->e
 ```
-
-```sequence
+{{< mermaid >}}
+sequenceDiagram
 Andrew->China: Says Hello
 Note right of China: China thinks\nabout it
 China-->Andrew: How are you?
 Andrew->>China: I am good thanks!
-```
+{{< /mermaid >}}
+
+{{< mermaid >}}
+gantt
+dateFormat  YYYY-MM-DD
+title 使用Mermaid增加甘特图
+excludes weekdays 2014-01-10
+
+section A 部分
+已完成的任务            :done,    des1, 2014-01-06,2014-01-08
+正在做的任务               :active,  des2, 2014-01-09, 3d
+未完成任务1               :         des3, after des2, 5d
+未完成任务2               :         des4, after des3, 5d
+{{< /mermaid >}}
+
+{{< mermaid >}}
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+Class03 *-- Class04
+Class05 o-- Class06
+Class07 .. Class08
+Class09 --> C2 : Where am i?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+Class08 <--> C2: Cool label
+{{< /mermaid >}}
 
 ### sequenceDiagram
 ```sequence
