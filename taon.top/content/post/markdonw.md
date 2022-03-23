@@ -13,6 +13,16 @@ date: 2022-03-22T12:27:53+08:00
 
 ## 可以成功的
 
+{{< mermaid >}}
+stateDiagram
+[*] --> Still
+Still --> [*]
+Still --> Moving
+Moving --> Still
+Moving --> Crash
+Crash --> [*]
+{{< /mermaid >}}
+
 ```flowchart
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
