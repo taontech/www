@@ -7,6 +7,25 @@ date: 2022-03-22T12:27:53+08:00
 > **⚠ WARNING: Aliens are coming.**  
 > A description of the colour, smell and dangerous behaviour of the aliens.
 
+
+{{< mermaid >}}
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'}}}%%
+        graph TD
+          A[Christmas] -->|Get money| B(Go shopping)
+          B --> C{Let me think}
+          B --> G[/Another/]
+          C ==>|One| D[Laptop]
+          C -->|Two| E[iPhone]
+          C -->|Three| F[fa:fa-car Car]
+          subgraph section
+            C
+            D
+            E
+            F
+            G
+          end
+{{< /mermaid >}}
+
 {{< mermaid >}}
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
