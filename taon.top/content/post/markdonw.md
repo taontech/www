@@ -26,7 +26,7 @@ c2(no)->op2->e
 ```
 
 {{< mermaid >}}
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'}}}%%
+%%{init: {'theme': 'neutral'}}%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
@@ -131,3 +131,20 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 {{< /mermaid >}}
 
+```mermaid
+%%{init: {'theme': 'base'}}%%
+        graph TD
+          A[Christmas] -->|Get money| B(Go shopping)
+          B --> C{Let me think}
+          B --> G[/Another/]
+          C ==>|One| D[Laptop]
+          C -->|Two| E[iPhone]
+          C -->|Three| F[fa:fa-car Car]
+          subgraph section
+            C
+            D
+            E
+            F
+            G
+          end
+```
