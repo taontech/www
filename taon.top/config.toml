@@ -163,7 +163,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
  #   visitor = false
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
-    enable = false
+    enable = true
     options = ""
 
   [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
