@@ -9,7 +9,7 @@ date: 2022-03-22T12:27:53+08:00
 
 
 {{< mermaid >}}
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4422cc', 'edgeLabelBackground':'#eeffee', 'tertiaryColor': '#fff0f0'}}}%%
+%%{init: {'theme': 'neutral'}}%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
