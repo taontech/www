@@ -178,8 +178,8 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.reward]                                         # 文章打赏
     enable = true
-    wechat = "https://taon.top/img/reward/wechat.jpg"           # 微信二维码
-    alipay = "https://taon.top/img/reward/alipay.jpg"           # 支付宝二维码
+    wechat = "https://taon.top/img/reward/wechat.png"           # 微信二维码
+    alipay = "https://taon.top/img/reward/alipay.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
     a-email = "mailto:taontech@gmail.com"
