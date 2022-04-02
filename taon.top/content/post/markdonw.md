@@ -140,6 +140,7 @@ Class08 <--> C2: Cool label
           C ==>|One| D[Laptop]
           C -->|Two| E[iPhone]
           C -->|Three| F[fa:fa-car Car]
+          C -->|Fr| H[hahah]
           subgraph section
             C
             D
