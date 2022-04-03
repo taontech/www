@@ -141,11 +141,16 @@ Class08 <--> C2: Cool label
           C -->|Two| E[iPhone]
           C -->|Three| F[fa:fa-car Car]
           C -->|Fr| H[hahah]
-          subgraph section
-            C
-            D
+          subgraph section1
             E
-            F
+            H
+            D
             G
+            F
+          end
+          subgraph section
+            A
+            B
+            C
           end
 ```
