@@ -7,7 +7,7 @@ date: 2022-03-22T12:27:53+08:00
 > **⚠ WARNING: Aliens are coming.**  
 > A description of the colour, smell and dangerous behaviour of the aliens.
 
-```flowchart
+```flowchat
 st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
 op1=>operation: My Operation|past
@@ -25,8 +25,7 @@ c2(yes)->io->e
 c2(no)->op2->e
 ```
 
-{{< mermaid >}}
-%%{init: {'theme': 'neutral'}}%%
+```mermaid
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
@@ -41,26 +40,24 @@ c2(no)->op2->e
             F
             G
           end
-{{< /mermaid >}}
+```
 
-{{< mermaid >}}
+```mermaid
 graph LR
     A[Square Rect] -- Link text --> B((Circle))
     A --> C(Round Rect)
     B --> D{Rhombus}
     C --> D
-{{< /mermaid >}}
-
-{{< mermaid >}}
+```
+```mermaid
 pie
     title Key elements in Product X
     "Calcium" : 42.96
     "Potassium" : 50.05
     "Magnesium" : 10.01
     "Iron" :  5
-{{< /mermaid >}}
-
-{{< mermaid >}}
+```
+```mermaid
 erDiagram
     CAR ||--o{ NAMED-DRIVER : allows
     CAR {
@@ -74,10 +71,11 @@ erDiagram
         string lastName
         int age
     }
-{{< /mermaid >}}
+```
 ## 可以成功的
 
-{{< mermaid >}}
+
+```mermaid
 stateDiagram
 [*] --> Still
 Still --> [*]
@@ -85,9 +83,10 @@ Still --> Moving
 Moving --> Still
 Moving --> Crash
 Crash --> [*]
-{{< /mermaid >}}
+```
 
-{{< mermaid >}}
+
+```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -99,9 +98,10 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
-{{< /mermaid >}}
+```
 
-{{< mermaid >}}
+
+```mermaid
 gantt
 dateFormat  YYYY-MM-DD
 title 使用Mermaid增加甘特图
@@ -112,9 +112,9 @@ section A 部分
 正在做的任务               :active,  des2, 2014-01-09, 3d
 未完成任务1               :         des3, after des2, 5d
 未完成任务2               :         des4, after des3, 5d
-{{< /mermaid >}}
+```
 
-{{< mermaid >}}
+```mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
 Class03 *-- Class04
@@ -129,11 +129,10 @@ Class01 : size()
 Class01 : int chimp
 Class01 : int gorilla
 Class08 <--> C2: Cool label
-{{< /mermaid >}}
+```
 
 ```mermaid
-%%{init: {'theme': 'base'}}%%
-        graph TD
+    graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
           B --> G[/Another/]
@@ -147,10 +146,5 @@ Class08 <--> C2: Cool label
             D
             G
             F
-          end
-          subgraph section
-            A
-            B
-            C
           end
 ```
