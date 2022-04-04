@@ -25,7 +25,7 @@ c2(yes)->io->e
 c2(no)->op2->e
 ```
 
-```mermaid
+``` mermaid
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
@@ -49,7 +49,7 @@ graph LR
     B --> D{Rhombus}
     C --> D
 ```
-```mermaid
+``` mermaid
 pie
     title Key elements in Product X
     "Calcium" : 42.96
@@ -57,7 +57,7 @@ pie
     "Magnesium" : 10.01
     "Iron" :  5
 ```
-```mermaid
+``` mermaid
 erDiagram
     CAR ||--o{ NAMED-DRIVER : allows
     CAR {
@@ -75,7 +75,7 @@ erDiagram
 ## 可以成功的
 
 
-```mermaid
+``` mermaid
 stateDiagram
 [*] --> Still
 Still --> [*]
@@ -86,7 +86,7 @@ Crash --> [*]
 ```
 
 
-```mermaid
+``` mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -101,7 +101,7 @@ sequenceDiagram
 ```
 
 
-```mermaid
+``` mermaid
 gantt
 dateFormat  YYYY-MM-DD
 title 使用Mermaid增加甘特图
@@ -114,7 +114,7 @@ section A 部分
 未完成任务2               :         des4, after des3, 5d
 ```
 
-```mermaid
+``` mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
 Class03 *-- Class04
@@ -131,20 +131,20 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-```mermaid
-    graph TD
-          A[Christmas] -->|Get money| B(Go shopping)
-          B --> C{Let me think}
-          B --> G[/Another/]
-          C ==>|One| D[Laptop]
-          C -->|Two| E[iPhone]
-          C -->|Three| F[fa:fa-car Car]
-          C -->|Fr| H[hahah]
-          subgraph section1
-            E
-            H
-            D
-            G
-            F
-          end
+``` mermaid
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    B --> G[/Another/]
+    C ==>|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+    C -->|Fr| H[hahah]
+    subgraph section1
+    
+    H
+    D
+    G
+    
+    end
 ```
