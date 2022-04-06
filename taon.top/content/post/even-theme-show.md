@@ -11,10 +11,10 @@ date: 2022-04-05T18:58:20+08:00
 %%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
 ```
 
-### dark
+### base
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
