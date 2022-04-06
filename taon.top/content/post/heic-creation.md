@@ -38,3 +38,42 @@ if let currentFrame = session.currentFrame, let depthData = currentFrame.capture
         }
     }
 ```
+
+Another Example:
+
+``` swift
+extension UIImage {
+  enum HEICError: Error {
+    case heicNotSupported
+    case cgImageMissing
+    case couldNotFinalize
+  }
+  //接口iOS4+。 其中 .heic 要求 iOS11+，
+  func heicData(compressionQuality: CGFloat) throws -> Data {
+    //1.一个空的数据缓冲区.装图片数据，并创建压缩目标。设置为.heic
+    let data = NSMutableData()
+    guard let imageDestination =
+      CGImageDestinationCreateWithData(
+        data, AVFileType.heic as CFString, 1, nil
+      )
+      else {
+        throw HEICError.heicNotSupported
+    }
+    //2.确保有要处理的图像数据
+    guard let cgImage = self.cgImage else {
+      throw HEICError.cgImageMissing
+    }
+    //3.质量控制。
+    let options: NSDictionary = [
+      kCGImageDestinationLossyCompressionQuality: compressionQuality
+    ]
+    //4.将图像数据和选项一起应用到目标，完成HEIC图像压缩。
+    CGImageDestinationAddImage(imageDestination, cgImage, options)
+    guard CGImageDestinationFinalize(imageDestination) else {
+      throw HEICError.couldNotFinalize
+    }
+    
+    return data as Data
+  }
+}
+```
