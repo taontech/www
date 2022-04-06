@@ -12,7 +12,10 @@ date: 2022-04-05T18:58:20+08:00
 ```
 
 ### base
-
+自定义的主题推荐使用：
+```
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
+```
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
         graph TD
