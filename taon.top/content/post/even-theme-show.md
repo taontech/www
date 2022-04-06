@@ -4,14 +4,17 @@ date: 2022-04-05T18:58:20+08:00
 ---
 
 ## Mermaid 主题演示
+
 > 四种，分别如下所示
 
-```
+```javascript
 %%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
 ```
-###**dark**
-``` mermaid
-%%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
+
+### dark
+
+```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
@@ -19,6 +22,7 @@ date: 2022-04-05T18:58:20+08:00
           C ==>|One| D[Laptop]
           C -->|Two| E[iPhone]
           C -->|Three| F[fa:fa-car Car]
+          C --> G
           subgraph section
             C
             D
@@ -27,26 +31,47 @@ date: 2022-04-05T18:58:20+08:00
             G
           end
 ```
+```mermaid
+%%{init: {'theme': 'dark', "flowchart" : { "curve" : "basis" } } }%%
+        graph TD
+          A[Christmas] -->|Get money| B(Go shopping)
+          B --> C{Let me think}
+          B --> G[/Another/]
+          C ==>|One| D[Laptop]
+          C -->|Two| E[iPhone]
+          C -->|Three| F[fa:fa-car Car]
+          C --> G
+          subgraph section
+            C
+            D
+            E
+            F
+            G
+          end
+```
+
 ###**neutral**
-``` mermaid
+
+```mermaid
 %%{init: {'theme': 'neutral' } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
-          B --> G[/Another/]
+          B --> G[(Another)]
           C ==>|One| D[Laptop]
           C -->|Two| E[iPhone]
           C -->|Three| F[fa:fa-car Car]
           subgraph section
-            C
             D
             E
             F
             G
           end
 ```
-###**default**
-``` mermaid
+
+### default
+
+```mermaid
 %%{init: {'theme': 'default' } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
@@ -57,14 +82,13 @@ date: 2022-04-05T18:58:20+08:00
           C -->|Three| F[fa:fa-car Car]
           subgraph section
             C
-            D
-            E
-            F
-            G
+            B
           end
 ```
+
 ###**forest**
-``` mermaid
+
+```mermaid
 %%{init: {'theme': 'forest' } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
@@ -75,9 +99,6 @@ date: 2022-04-05T18:58:20+08:00
           C -->|Three| F[fa:fa-car Car]
           subgraph section
             C
-            D
-            E
-            F
             G
           end
 ```
