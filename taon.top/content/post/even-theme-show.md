@@ -17,7 +17,7 @@ date: 2022-04-05T18:58:20+08:00
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
 ```
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#22aadd', 'edgeLabelBackground':'#223366', 'tertiaryColor': '#222233','lineColor':'#888888','textColor':'#888888','primaryTextColor':'#ffffff'} } }%%
         graph TD
           A[Christmas] -->|Get money| B(Go shopping)
           B --> C{Let me think}
