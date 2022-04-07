@@ -153,3 +153,43 @@ Hyperfocal Distance             : 3.29 m
 Light Value                     : 1.6
 Lens ID                         : iPhone 13 Pro back triple camera 5.7mm f/1.5
 ```
+
+HDR info
+```c
+/* Depth data support for JPEG, HEIF, and DNG images.
+ * The returned CFDictionary contains:
+ *   - the depth data (CFDataRef) - (kCGImageAuxiliaryDataInfoData),
+ *   - the depth data description (CFDictionary) - (kCGImageAuxiliaryDataInfoDataDescription)
+ *   - metadata (CGImageMetadataRef) - (kCGImageAuxiliaryDataInfoMetadata)
+ * CGImageSourceCopyAuxiliaryDataInfoAtIndex returns nil if the image did not contain ‘auxiliaryImageDataType’ data.
+ */
+IMAGEIO_EXTERN CFDictionaryRef _iio_Nullable CGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSourceRef _iio_Nonnull isrc, size_t index, CFStringRef _iio_Nonnull auxiliaryImageDataType ) IMAGEIO_AVAILABLE_STARTING(10.13, 11.0);
+
+```
+```
+Printing description of cgImageProperties:
+{
+    CanAnimate = 0;
+    FileSize = 217499;
+    "{FileContents}" =     {
+        ImageCount = 1;
+        Images =         (
+                        {
+                AuxiliaryData =                 (
+                                        {
+                        AuxiliaryDataType = kCGImageAuxiliaryDataTypeHDRGainMap;
+                        Height = 1266;
+                        Width = 585;
+                    }
+                );
+                Height = 2532;
+                ImageIndex = 0;
+                NamedColorSpace = kCGColorSpaceDisplayP3;
+                ThumbnailImages =                 (
+                );
+                Width = 1170;
+            }
+        );
+    };
+}
+```
