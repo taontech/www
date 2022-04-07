@@ -183,7 +183,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.social]                                         # 社交链接
     a-email = "mailto:taontech@gmail.com"
-    # b-stack-overflow = "http://localhost:1313"
+    b-stack-overflow = "https://stackoverflow.com/users/2637136/taontech"
     c-twitter = "https://twitter.com/taontech"
     #d-facebook = "http://localhost:1313"
     #e-linkedin = "http://localhost:1313"
