@@ -17,7 +17,7 @@ date: 2022-04-05T18:58:20+08:00
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffee', 'tertiaryColor': '#fff0f0'} } }%%
 ```
 可以修改的内容如下：
-> 
+
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#22aadd', 'edgeLabelBackground':'#223366', 'tertiaryColor': '#222233','lineColor':'#888888','textColor':'#888888','primaryTextColor':'#ffffff'} } }%%
         graph TD
