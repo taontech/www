@@ -3,6 +3,8 @@ title: "Matal for HDR Gain Map"
 date: 2022-04-08T11:03:31+08:00
 ---
 
+## kernel function
+> 下面的方法并不是准确的做法，只是一个简单尝试，使用这种方法，把普通照片线性增益到HDR，使用最简单的Tone mapping 函数
 ``` C++
 #include <metal_stdlib>
 using namespace metal;
